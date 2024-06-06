@@ -1,0 +1,62 @@
+/* Reset CSS */
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Header Styles */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 50px;
+    margin-right: 10px;
+}
+
+.nav-links {
+    list-style-type: none;
+}
+
+.nav-links li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.nav-links li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Coming Soon Section Styles */
+.coming-soon {
+    text-align: center;
+    padding: 100px 0;
+}
+
+.coming-soon img {
+    width: 300px;
+    margin-bottom: 40px;
+}
+
+.coming-soon h2 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.coming-soon p {
+    font-size: 1.2em;
+}
