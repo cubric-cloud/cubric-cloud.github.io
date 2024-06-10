@@ -13,7 +13,6 @@ body {
   background-size: cover;
   background-position: center;
   z-index: -1;
-  animation: fade-in 2s ease-in-out;
 }
 
 .overlay {
@@ -41,8 +40,7 @@ header {
 }
 
 header .logo img {
-  width: 4168px;
-  height: 48px;
+  height: 40px;
 }
 
 nav ul {
@@ -88,13 +86,13 @@ nav ul li a:hover {
 
 @keyframes bg-rolling {
   0%, 100% {
-    background-image: url('bg0.png');
+    background-image: url('background1.png');
   }
   33% {
-    background-image: url('bg1.png');
+    background-image: url('background2.png');
   }
   66% {
-    background-image: url('bg2.png');
+    background-image: url('background3.png');
   }
 }
 
