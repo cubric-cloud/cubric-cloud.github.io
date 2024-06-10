@@ -28,17 +28,17 @@ body {
 }
 
 .bg-image1 {
-  background-image: url('bg1.png');
+  background-image: url('bg0.png');
   animation-delay: 0s;
 }
 
 .bg-image2 {
-  background-image: url('bg2.png');
+  background-image: url('bg1.png');
   animation-delay: 5s;
 }
 
 .bg-image3 {
-  background-image: url('bg3.png');
+  background-image: url('bg2.png');
   animation-delay: 10s;
 }
 
