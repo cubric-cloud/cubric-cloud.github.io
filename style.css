@@ -45,7 +45,7 @@ header .logo img {
 }
 
 nav {
-  margin-right: 20px;  
+  margin-left: 20px; 
 }
 
 nav ul {
@@ -83,7 +83,7 @@ main {
 
 .main-content {
   position: fixed;
-  top: 50%;
+  top: 60%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 2;
