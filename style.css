@@ -13,6 +13,7 @@ body {
   background-size: cover;
   background-position: center;
   z-index: -1;
+  animation: bg-rolling 15s infinite;
 }
 
 .overlay {
@@ -94,10 +95,6 @@ nav ul li a:hover {
   66% {
     background-image: url('background3.png');
   }
-}
-
-.bg-image {
-  animation: bg-rolling 15s infinite;
 }
 
 .mobile-menu-modal {
