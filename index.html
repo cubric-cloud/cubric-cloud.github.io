@@ -10,8 +10,12 @@
   <link href="https://fonts.googleapis.com/css2?family=Pretendard&display=swap" rel="stylesheet">
 </head>
 <body>
-  <!-- 배경 이미지 -->
-  <div class="bg-image"></div>
+  <!-- 배경 이미지 롤링 -->
+  <div class="bg-image-container">
+    <div class="bg-image bg-image1"></div>
+    <div class="bg-image bg-image2"></div>
+    <div class="bg-image bg-image3"></div>
+  </div>
 
   <!-- 헤더 -->
   <header>
@@ -20,16 +24,18 @@
     </div>
     <nav>
       <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Solutions</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="#" onclick="showAlert()">Home</a></li>
+        <li><a href="#" onclick="showAlert()">About</a></li>
+        <li><a href="#" onclick="showAlert()">Solutions</a></li>
+        <li><a href="#" onclick="showAlert()">Contact</a></li>
       </ul>
     </nav>
+    <div class="mobile-menu-btn">☰</div>
   </header>
 
   <!-- 메인 콘텐츠 -->
   <main>
+    <div class="overlay"></div>
     <h1>Coming soon!</h1>
   </main>
 
@@ -37,10 +43,10 @@
   <div class="mobile-menu-modal">
     <nav>
       <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Solutions</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="#" onclick="showAlert()">Home</a></li>
+        <li><a href="#" onclick="showAlert()">About</a></li>
+        <li><a href="#" onclick="showAlert()">Solutions</a></li>
+        <li><a href="#" onclick="showAlert()">Contact</a></li>
       </ul>
     </nav>
   </div>
