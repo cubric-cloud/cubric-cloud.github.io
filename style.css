@@ -159,6 +159,7 @@ main {
 
 .mobile-menu-modal nav ul li {
   margin: 10px 0;
+  top: 50%;
 }
 
 .mobile-menu-modal nav ul li a {
