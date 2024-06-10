@@ -66,14 +66,22 @@ nav ul li a:hover {
   color: #3356D5;
 }
 
-.coming-soon {
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
   position: relative;
+  z-index: 1;
+}
+
+.coming-soon {
   font-size: 4rem;
   font-weight: bold;
   color: white;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   animation: fade-in 2s ease-in-out;
-  z-index: 2;
+  text-align: center;
 }
 
 @keyframes fade-in {
@@ -143,5 +151,9 @@ nav ul li a:hover {
 
   .mobile-menu-btn {
     display: block;
+  }
+
+  .coming-soon {
+    font-size: 2rem;
   }
 }
