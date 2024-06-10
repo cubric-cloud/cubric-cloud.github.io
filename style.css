@@ -78,7 +78,7 @@ main {
 
 .coming-soon {
   position: fixed;
-  top: 70%;
+  top: 60%;
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: 4rem;
@@ -118,19 +118,34 @@ main {
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.8);
-  z-index: 3;
+  z-index: 4;
   justify-content: center;
   align-items: center;
   text-align: center;
 }
 
 .mobile-menu-modal nav ul {
+  display: flex;
   flex-direction: column;
   align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .mobile-menu-modal nav ul li {
   margin: 10px 0;
+}
+
+.mobile-menu-modal nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 2rem;
+  transition: color 0.3s;
+}
+
+.mobile-menu-modal nav ul li a:hover {
+  color: #3356D5;
 }
 
 .mobile-menu-btn {
@@ -138,7 +153,7 @@ main {
   position: fixed;
   top: 10px;
   right: 10px;
-  z-index: 4;
+  z-index: 5;
   cursor: pointer;
 }
 
