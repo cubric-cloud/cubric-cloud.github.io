@@ -32,7 +32,7 @@ header {
   top: 0;
   width: 100%;
   background: rgba(255, 255, 255, 0.8);
-  z-index: 2;
+  z-index: 3;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -73,11 +73,12 @@ main {
   height: 100vh;
   position: relative;
   z-index: 1;
+  text-align: center;
 }
 
 .coming-soon {
   position: fixed;
-  top: 70%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: 4rem;
@@ -120,6 +121,7 @@ main {
   z-index: 3;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
 
 .mobile-menu-modal nav ul {
