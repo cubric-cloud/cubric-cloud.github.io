@@ -3,7 +3,7 @@ const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
 const mobileMenuModal = document.querySelector('.mobile-menu-modal');
 
 mobileMenuBtn.addEventListener('click', () => {
-  mobileMenuModal.style.display = 'block';
+  mobileMenuModal.style.display = 'flex';
 });
 
 mobileMenuModal.addEventListener('click', (event) => {
@@ -12,13 +12,25 @@ mobileMenuModal.addEventListener('click', (event) => {
   }
 });
 
-// 모바일 메뉴 클릭 이벤트 핸들러
-const mobileMenuItems = document.querySelectorAll('.mobile-menu-item');
-
-mobileMenuItems.forEach((item) => {
-  item.addEventListener('click', () => {
-    // 메뉴 항목 클릭 시 동작
-    mobileMenuModal.style.display = 'none';
-    // 추가적인 동작 수행 (예: 페이지 이동, 내용 변경 등)
+document.querySelectorAll('nav ul li a').forEach(link => {
+  link.addEventListener('click', () => {
+    alert('준비중입니다.');
   });
+});
+
+document.querySelectorAll('.mobile-menu-modal nav ul li a').forEach(link => {
+  link.addEventListener('click', () => {
+    alert('준비중입니다.');
+  });
+});
+
+// 배경 이미지 페이드 인 애니메이션
+const bgImage = document.querySelector('.bg-image');
+const mainText = document.querySelector('main h1');
+
+window.addEventListener('load', () => {
+  bgImage.classList.add('fade-in');
+  setTimeout(() => {
+    mainText.classList.add('fade-in');
+  }, 1000);
 });
