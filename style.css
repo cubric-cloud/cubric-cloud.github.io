@@ -28,17 +28,17 @@ body {
 }
 
 .bg-image1 {
-  background-image: url('bg1.jpg');
+  background-image: url('bg1.png');
   animation-delay: 0s;
 }
 
 .bg-image2 {
-  background-image: url('bg2.jpg');
+  background-image: url('bg2.png');
   animation-delay: 5s;
 }
 
 .bg-image3 {
-  background-image: url('bg3.jpg');
+  background-image: url('bg3.png');
   animation-delay: 10s;
 }
 
@@ -73,7 +73,8 @@ header {
 }
 
 .logo img {
-  height: 40px;
+  width: 168px;
+  height: 46px;
 }
 
 nav ul {
