@@ -13,24 +13,25 @@ mobileMenuModal.addEventListener('click', (event) => {
 });
 
 document.querySelectorAll('nav ul li a').forEach(link => {
-  link.addEventListener('click', () => {
+  link.addEventListener('click', (event) => {
+    event.preventDefault();
     alert('준비중입니다.');
   });
 });
 
 document.querySelectorAll('.mobile-menu-modal nav ul li a').forEach(link => {
-  link.addEventListener('click', () => {
+  link.addEventListener('click', (event) => {
+    event.preventDefault();
     alert('준비중입니다.');
   });
 });
 
-// 배경 이미지 페이드 인 애니메이션
+// 배경 이미지 롤링
 const bgImage = document.querySelector('.bg-image');
-const mainText = document.querySelector('main h1');
+const bgImages = ['background1.png', 'background2.png', 'background3.png'];
+let currentImageIndex = 0;
 
-window.addEventListener('load', () => {
-  bgImage.classList.add('fade-in');
-  setTimeout(() => {
-    mainText.classList.add('fade-in');
-  }, 1000);
-});
+setInterval(() => {
+  currentImageIndex = (currentImageIndex + 1) % bgImages.length;
+  bgImage.style.backgroundImage = `url('${bgImages[currentImageIndex]}')`;
+}, 5000);
