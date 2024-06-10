@@ -45,7 +45,7 @@ header .logo img {
 }
 
 nav {
-  margin-left: 20px; 
+  margin-left: 20px; /* 좌측 로고 이미지의 좌측 마진과 동일한 우측 마진 설정 */
 }
 
 nav ul {
@@ -101,18 +101,18 @@ main {
 .main-content p {
   font-size: 2rem;
   color: white;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  text-shadow: 2px 2px 4
+
+px rgba(0, 0, 0, 0.5);
   margin: 0;
   padding: 0;
   line-height: 1.2;
+  opacity: 0; /* 초기에는 투명하게 설정 */
+  transition: opacity 1s ease-in-out; /* 천천히 나타나는 트랜지션 */
 }
 
-.coming-soon {
-  font-size: 4rem;
-  font-weight: bold;
-  color: white;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-  animation: fade-in 2s ease-in-out;
+.main-content p.visible {
+  opacity: 1; /* 나타나는 애니메이션 클래스 */
 }
 
 @keyframes fade-in {
