@@ -3,7 +3,7 @@ const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
 const mobileMenuModal = document.querySelector('.mobile-menu-modal');
 
 mobileMenuBtn.addEventListener('click', () => {
-  mobileMenuModal.style.display = 'flex';
+  mobileMenuModal.style.display = 'block';
 });
 
 mobileMenuModal.addEventListener('click', (event) => {
@@ -12,26 +12,18 @@ mobileMenuModal.addEventListener('click', (event) => {
   }
 });
 
-document.querySelectorAll('nav ul li a').forEach(link => {
-  link.addEventListener('click', (event) => {
-    event.preventDefault();
-    alert('준비중입니다.');
-  });
-});
-
-document.querySelectorAll('.mobile-menu-modal nav ul li a').forEach(link => {
-  link.addEventListener('click', (event) => {
-    event.preventDefault();
-    alert('준비중입니다.');
-  });
-});
-
-// 배경 이미지 롤링
+// 배경 이미지 페이드 인 애니메이션
 const bgImage = document.querySelector('.bg-image');
-const bgImages = ['background1.png', 'background2.png', 'background3.png'];
-let currentImageIndex = 0;
+const mainText = document.querySelector('.main-content h1');
+const hiddenText = document.querySelector('.hidden-text');
 
-setInterval(() => {
-  currentImageIndex = (currentImageIndex + 1) % bgImages.length;
-  bgImage.style.backgroundImage = `url('${bgImages[currentImageIndex]}')`;
-}, 5000);
+window.addEventListener('load', () => {
+  bgImage.classList.add('fade-in');
+  setTimeout(() => {
+    mainText.classList.add('fade-in');
+  }, 1000);
+
+  mainText.addEventListener('animationend', () => {
+    hiddenText.classList.add('visible');
+  });
+});
