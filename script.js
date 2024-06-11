@@ -23,7 +23,7 @@ window.addEventListener('load', () => {
     mainText.classList.add('fade-in');
     setTimeout(() => {
       hiddenText.classList.add('visible');
-    }, 2000);
+    }, 2000); // 'Coming soon!' 애니메이션이 끝난 후 'AI for a Better Life, with Cubric'가 나타남
   }, 1000);
 });
 
@@ -49,7 +49,3 @@ window.addEventListener('click', (event) => {
   }
 });
 
-// 페이지 로드 시 모바일 메뉴 모달이 열리지 않도록 수정
-window.addEventListener('DOMContentLoaded', () => {
-  mobileMenuModal.style.display = 'none';
-});
