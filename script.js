@@ -3,7 +3,7 @@ const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
 const mobileMenuModal = document.querySelector('.mobile-menu-modal');
 
 mobileMenuBtn.addEventListener('click', () => {
-  mobileMenuModal.style.display = 'flex';
+  mobileMenuModal.style.display = mobileMenuModal.style.display === 'flex' ? 'none' : 'flex';
 });
 
 mobileMenuModal.addEventListener('click', (event) => {
@@ -29,7 +29,7 @@ window.addEventListener('load', () => {
 });
 
 // 메뉴 클릭시 준비중입니다 알림
-const navLinks = document.querySelectorAll('nav ul li a');
+const navLinks = document.querySelectorAll('nav ul li a, .mobile-menu-modal nav ul li a');
 
 navLinks.forEach(link => {
   link.addEventListener('click', (e) => {
