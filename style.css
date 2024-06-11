@@ -41,6 +41,11 @@ header {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+header .logo img {
+  width: 168px;
+  height: 48px;
+}
+
 header .logo {
   margin-left: 20px;
 }
