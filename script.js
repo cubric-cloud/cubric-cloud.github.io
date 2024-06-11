@@ -3,7 +3,7 @@ const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
 const mobileMenuModal = document.querySelector('.mobile-menu-modal');
 
 mobileMenuBtn.addEventListener('click', () => {
-  mobileMenuModal.style.display = 'block';
+  mobileMenuModal.style.display = 'flex';
 });
 
 mobileMenuModal.addEventListener('click', (event) => {
