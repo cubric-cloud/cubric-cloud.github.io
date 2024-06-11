@@ -205,7 +205,7 @@ main {
     display: block;
   }
 
-  .main-content p, .coming-soon {
+  .main-content h1, .main-content p {
     font-size: 1.5rem;
   }
 }
