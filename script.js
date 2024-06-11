@@ -48,4 +48,3 @@ window.addEventListener('click', (event) => {
     popup.style.display = 'none';
   }
 });
-
