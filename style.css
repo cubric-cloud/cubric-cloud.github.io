@@ -209,3 +209,33 @@ main {
     font-size: 1.5rem;
   }
 }
+
+/* 팝업 창 스타일 */
+.popup {
+  display: none; /* 처음에는 보이지 않게 설정 */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 6;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.popup-content {
+  background: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.popup-content .close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  font-size: 1.5rem;
+}
