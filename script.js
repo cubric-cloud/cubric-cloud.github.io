@@ -27,3 +27,13 @@ window.addEventListener('load', () => {
     hiddenText.classList.add('visible');
   });
 });
+
+// 메뉴 클릭시 준비중입니다 알림
+const navLinks = document.querySelectorAll('nav ul li a');
+
+navLinks.forEach(link => {
+  link.addEventListener('click', (e) => {
+    e.preventDefault();
+    alert('준비중입니다.');
+  });
+});
