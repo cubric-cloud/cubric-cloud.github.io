@@ -37,15 +37,16 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
+  box-sizing: border-box;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-header .logo img {
-  height: 40px;
+header .logo {
+  margin-left: 20px;
 }
 
-nav {
-  margin-left: 20px; /* 좌측 로고 이미지의 좌측 마진과 동일한 우측 마진 설정 */
+header nav {
+  margin-right: 20px;
 }
 
 nav ul {
@@ -87,7 +88,7 @@ main {
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 2;
-    text-align: center;
+  text-align: center;
 }
 
 .main-content h1 {
@@ -143,6 +144,7 @@ main {
   height: 100%;
   background: rgba(0, 0, 0, 0.8);
   z-index: 4;
+  display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -159,7 +161,6 @@ main {
 
 .mobile-menu-modal nav ul li {
   margin: 10px 0;
-  top: 50%;
 }
 
 .mobile-menu-modal nav ul li a {
@@ -203,4 +204,3 @@ main {
     font-size: 1.5rem;
   }
 }
-
